@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.huawei.agconnect'
 }
 
 android {
@@ -15,6 +16,39 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    signingConfigs {
+        dummySigning {
+            keyAlias 'key0'
+            keyPassword 'key123'
+            storeFile file('../dummykey.jks')
+            storePassword 'key123'
+        }
+    }
+
+    flavorDimensions "services"
+    productFlavors{
+        hmsVersion{
+            dimension "services"
+        }
+        gmsVersion{
+            dimension "services"
+        }
+
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.dummySigning
+        }
+        debug {
+            signingConfig signingConfigs.dummySigning
+        }
+        preview {
+            signingConfig signingConfigs.dummySigning
+        }
+    }
+
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -34,4 +68,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    hmsVersionImplementation 'com.huawei.hms:push:6.11.0.300'
 }
