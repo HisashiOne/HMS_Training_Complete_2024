@@ -1,5 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+
     dependencies {
         // Add the Android Gradle plugin configuration. You need to replace {version} with the actual Gradle plugin version, for example, 7.1.1.
         classpath 'com.android.tools.build:gradle:7.3.0'

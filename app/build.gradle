@@ -26,6 +26,7 @@ android {
         }
     }
 
+
     flavorDimensions "services"
     productFlavors{
         hmsVersion{
@@ -72,6 +73,6 @@ dependencies {
 
     hmsVersionImplementation 'com.huawei.hms:site:6.5.1.302'
     hmsVersionImplementation 'com.huawei.hms:maps:6.11.2.301'
-    hmsVersionImplementation 'com.huawei.hms:location::6.4.0.300'
+    hmsVersionImplementation 'com.huawei.hms:location:6.4.0.300'
     //implementation 'com.huawei.agconnect:agconnect-core:{version}'
 }
