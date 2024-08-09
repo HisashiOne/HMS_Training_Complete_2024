@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity(){
         val arrayAdapter: ArrayAdapter<*>
         val users = arrayOf(
             "HMS Push Kit", "HMS Map Kit", "HMS Analytics Kit",
-            "HMS IAP Kit", "HMS ML Scan Kit", "HMS Remote Config"
+            "HMS IAP Kit", "HMS Account Kit",
+            "HMS ML Scan Kit", "HMS Remote Config"
         )
 
         // access the listView from xml file
@@ -39,8 +40,12 @@ class MainActivity : AppCompatActivity(){
             when(position) {
                 0 -> intent = Intent(this, PushActivity::class.java)
                 1 -> intent = Intent(this, MapActivity::class.java)
+                2 -> intent = Intent(this, AnalyticsActivity::class.java)
                 3 -> intent = Intent(this, IAPActivity::class.java)
-                5 -> intent = Intent(this, RemoteActivity::class.java)
+                4 -> intent = Intent(this, AccountActivity::class.java)
+                5 -> intent = Intent(this, ScanActivity::class.java)
+                6 -> intent = Intent(this, RemoteActivity::class.java)
+
                 else -> {
 
                 }
