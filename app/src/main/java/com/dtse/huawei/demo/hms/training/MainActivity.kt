@@ -39,9 +39,6 @@ class MainActivity : AppCompatActivity(){
             when(position) {
                 0 -> intent = Intent(this, PushActivity::class.java)
                 1 -> intent = Intent(this, MapActivity::class.java)
-                2 -> intent = Intent(this, AnalyticsActivity::class.java)
-                4 -> intent = Intent(this, AccountActivity::class.java)
-                5 -> intent = Intent(this, ScanActivity::class.java)
                 else -> {
 
                 }

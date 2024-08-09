@@ -28,11 +28,11 @@ android {
 
 
     flavorDimensions "services"
-    productFlavors {
-        hmsVersion {
+    productFlavors{
+        hmsVersion{
             dimension "services"
         }
-        gmsVersion {
+        gmsVersion{
             dimension "services"
         }
 
@@ -75,7 +75,10 @@ dependencies {
     hmsVersionImplementation 'com.huawei.hms:site:6.5.1.302'
     hmsVersionImplementation 'com.huawei.hms:maps:6.11.2.301'
     hmsVersionImplementation 'com.huawei.hms:location:6.4.0.300'
-    hmsVersionImplementation 'com.huawei.hms:hianalytics:6.7.0.300'
-    hmsVersionImplementation 'com.huawei.hms:hwid:5.2.0.300'
-    hmsVersionImplementation 'com.huawei.hms:scan:2.10.0.301'
+    //hmsVersionImplementation 'com.huawei.agconnect:agconnect-remoteconfig-ktx:1.9.1.302'
+    hmsVersionImplementation 'com.huawei.agconnect:agconnect-remoteconfig:1.9.1.302'
+    hmsVersionImplementation 'com.huawei.agconnect:agconnect-core:1.9.1.302'
+// Huawei Analytics Kit
+    hmsVersionImplementation 'com.huawei.hms:hianalytics:6.4.0.300'
+    hmsVersionImplementation 'com.huawei.hms:iap:6.10.0.300'
 }
