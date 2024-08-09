@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity(){
             when(position) {
                 0 -> intent = Intent(this, PushActivity::class.java)
                 1 -> intent = Intent(this, MapActivity::class.java)
+                3 -> intent = Intent(this, IAPActivity::class.java)
                 5 -> intent = Intent(this, RemoteActivity::class.java)
                 else -> {
 

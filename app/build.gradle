@@ -80,4 +80,5 @@ dependencies {
     hmsVersionImplementation 'com.huawei.agconnect:agconnect-core:1.9.1.302'
 // Huawei Analytics Kit
     hmsVersionImplementation 'com.huawei.hms:hianalytics:6.4.0.300'
+    hmsVersionImplementation 'com.huawei.hms:iap:6.10.0.300'
 }
