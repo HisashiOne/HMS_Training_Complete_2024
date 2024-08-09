@@ -75,6 +75,9 @@ dependencies {
     hmsVersionImplementation 'com.huawei.hms:site:6.5.1.302'
     hmsVersionImplementation 'com.huawei.hms:maps:6.11.2.301'
     hmsVersionImplementation 'com.huawei.hms:location:6.4.0.300'
-    hmsVersionImplementation 'com.huawei.agconnect:agconnect-remoteconfig-ktx:1.9.1.302'
+    //hmsVersionImplementation 'com.huawei.agconnect:agconnect-remoteconfig-ktx:1.9.1.302'
     hmsVersionImplementation 'com.huawei.agconnect:agconnect-remoteconfig:1.9.1.302'
+    hmsVersionImplementation 'com.huawei.agconnect:agconnect-core:1.9.1.302'
+// Huawei Analytics Kit
+    hmsVersionImplementation 'com.huawei.hms:hianalytics:6.4.0.300'
 }
